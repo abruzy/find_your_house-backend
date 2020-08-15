@@ -45,3 +45,5 @@ gem "rubocop", "~> 0.89.1"
 gem "dotenv-rails", "~> 2.7"
 
 gem "jwt", "~> 2.2"
+
+gem "rack-cors", "~> 1.1"
