@@ -6,11 +6,6 @@ class ListingsController < ApplicationController
     json_response(@listings)
   end
 
-  def create
-    @listing = current_user.listings.create!(listing_params)
-    json_response(@listing)
-  end
-
   def show
     is_favourite = current_user.favourite_listings.include?(@listing)
 
@@ -23,10 +18,6 @@ class ListingsController < ApplicationController
   end
 
   private
-
-  def listing_params
-    params.permit(:title, :description, :rating, :price, :location, :host, :host_rating, :image)
-  end
 
   def set_listing
     @listing = Listing.find(params[:id])

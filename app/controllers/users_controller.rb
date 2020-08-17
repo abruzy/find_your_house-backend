@@ -10,11 +10,6 @@ class UsersController < ApplicationController
     json_response(response, :created)
   end
 
-  def index
-    @user = User.all
-    json_response(@user)
-  end
-
   private
 
   def user_params
