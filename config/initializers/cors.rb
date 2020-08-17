@@ -6,7 +6,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins 'https://findhouse-app-api.herokuapp.com'
+    origins 'https://findhouse-app.herokuapp.com'
     resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete, :options, :head],
     credentials: true
   end
