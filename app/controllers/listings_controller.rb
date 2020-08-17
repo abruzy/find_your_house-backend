@@ -7,7 +7,8 @@ class ListingsController < ApplicationController
   end
 
   def create
-    @listing = current_user.listings.create!()
+    @listing = current_user.listings.create!(listing_params)
+    json_response(@listing)
   end
 
   def show
