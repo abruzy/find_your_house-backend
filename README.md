@@ -11,6 +11,8 @@ Things you may want to cover:
 
 * Configuration
 
+* Knock Gem
+
 * Database creation
 
 * Database initialization
