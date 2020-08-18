@@ -13,6 +13,7 @@
 - Major languages - Ruby
 - frameworks - Ruby On Rails
 - Linters - Rubocop
+- Database - PostgreSQL
 
 ### ✨ Live Demo
 
