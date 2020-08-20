@@ -2,7 +2,7 @@ class FavouritesController < ApplicationController
   def index
     @favourites = current_user.favourite_listings
 
-    json_response(@favourites, :not_found)
+    json_response(@favourites)
   end
 
   def create
